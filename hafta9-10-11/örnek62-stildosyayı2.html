@@ -1,0 +1,62 @@
+<html>
+<head>
+<title>Link ve Arka Plan Özellikleri</title>
+<style type="text/css">
+    /* Sayfa Genel Arka Planı */
+    BODY { 
+        background-color: white;
+        background-image: url("fon.gif"); /* Sol tarafta dikey şerit varsa kullanılır */
+        background-repeat: repeat-y; 
+        background-position: left; 
+    }
+
+    /* Normal Link Durumu */
+    A {
+        font-style: normal;
+        color: navy;
+        font-family: "Times New Roman" !important;
+        text-decoration: none; /* Linkin altındaki çizgiyi kaldırır */
+    }
+
+    /* Ziyaret Edilmiş Link Durumu */
+    A:visited {
+        font-family: "Times New Roman" !important;
+        font-style: italic;
+        color: olive;
+    }
+
+    /* Tıklandığı Anki Link Durumu */
+    A:active { 
+        font-family: "Times New Roman";
+        color: red;
+    }
+
+    /* Fare Üzerine Geldiğinde Link Durumu */
+    A:hover {
+        text-decoration: underline; /* Altını çizer */
+        font-family: "Times New Roman" !important;
+        font-weight: bold;
+        font-style: normal;
+        color: maroon;
+    }
+
+    /* Özel Paragraf Stili (id="sol") */
+    p#sol {
+        position: relative;
+        visibility: visible;
+        left: 30pt;
+        width: 450pt;
+        font-family: "Verdana, Arial, Helvetica" !important;
+        font-size: 15pt;
+    }
+</style>
+</head>
+<body>
+
+    <p id="sol">
+        <a href="#">Bu bir deneme linkidir.</a><br><br>
+        Farenizi linkin üzerine getirin Hover
+    </p>
+
+</body>
+</html>
