@@ -1,19 +1,21 @@
-<html> 
-<head> 
-    <title>Hafta 8 - Örnek 37</title>
-</head> 
-<frameset rows="25%,25%,25%,25%" border="10" bordercolor="yellow"> 
-    
-    <frame name="col1" src="örnek35-htmlicerigi2.html"> 
-    
-    <frame name="col2" src="örnek36-htmlicerigi3.html"> 
-    
-    <frame name="col3" src="örnek51-htmlicerigi.html"> 
-    
-    <frame name="col4" src="örnek35-htmlicerigi2.html"> 
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Çerçeve Uygulaması</title>
+</head>
 
-    <noframes> 
-        <body>Tarayıcınız çerçeveleri desteklemiyor.</body> 
-    </noframes> 
-</frameset> 
+<frameset cols="200,*">
+    <frame name="sol" src="sol.html">
+
+    <frameset rows="100,*">
+        <frame name="a" src="örnek.html">
+        <frame name="b" src="alt.html">
+    </frameset>
+
+    <noframes>
+        <body>
+            Tarayıcınız çerçeveleri desteklemiyor.
+        </body>
+    </noframes>
+</frameset>
 </html>
