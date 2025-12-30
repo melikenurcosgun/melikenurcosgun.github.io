@@ -1,19 +1,20 @@
 <html> 
 <head> 
+    <title>istemci-taraflı görüntü haritaları</title> 
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/> 
 </head> 
-<frameset rows="25%,25%,25%,25%"> 
-    <frame name="col" src="örnek35-htmlicerigi2.html" marginheight="5" marginwidth="5" noresize scrolling="no"> 
-    
-    <frame name="co2" src="örnek36-htmlicerigi3.html" marginheight="5" marginwidth="5" noresize scrolling="no"> 
-    
-    <frame name="co3" src="kirmizi.html" marginheight="5" marginwidth="5" noresize scrolling="no"> 
-    
-    <frame name="co4" src="gri.html" marginheight="5" marginwidth="5" noresize scrolling="no"> 
-    
-    <noframes> 
-        <body>
-            Tarayıcınız çerçeveleri desteklemiyor.
-        </body> 
-    </noframes> 
-</frameset> 
+<body> 
+    <h1 align="center">istemci görüntü haritaları</h1> 
+     
+    <div align="center"> 
+        <img src="https://picsum.photos/400/200" usemap="#shapes" alt="shapes map" border="0" width="400" height="200"> 
+    </div> 
+
+    <map name="shapes" id="shapes"> 
+        <area shape="rect" coords="6,50,140,143" href="rectangle.html" alt="rectangle"> 
+        <area shape="circle" coords="195,100,50" href="circle.html" alt="circle"> 
+        <area shape="poly" coords="255,122,306,53,334,62,338,0,388,77,374,116,323,171,255,122" href="polygon.html" alt="polygon"> 
+        <area shape="default" href="or1.htm" alt="default"> 
+    </map> 
+</body> 
 </html>
